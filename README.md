@@ -1,5 +1,5 @@
 # Telegram Contacts Exporter
-Simple script to export contacts from telegram
+Simple script to export contacts from telegram into vCard file
 
 ## Getting Started
 ### Prerequisites
