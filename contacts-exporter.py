@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-from datetime import datetime
-
 import phonenumbers
 import re
+from datetime import datetime
 from telethon import functions
 from telethon.sync import TelegramClient
 
@@ -88,7 +87,7 @@ class VCARD:
 
 class TelegramConnection:
     """
-        custom TelegramClient with task to get the contact list in telegem
+        custom TelegramClient with task to get the contact list in telegram
     """
     def __init__(self):
         self.__client = TelegramClient('Contacts_Exporter', api_id=API_ID, api_hash=API_HASH)
