@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 import phonenumbers
 import re
+import os
 from datetime import datetime
 from telethon import functions
 from telethon.sync import TelegramClient
-
+from dotenv import load_dotenv
 # To get API_ID and API_HASH
 # https://my.telegram.org/auth?to=apps
 # check 'App configuration' section
+load_dotenv()
 
-API_ID = 000000  # Your API_ID
-API_HASH = "#########_YOUR_API_HASH_########"
+API_ID = os.getenv('API_ID')
+API_HASH = os.getenv('API_HASH')
 now_str = f"{datetime.now()}".replace(" ", "_").replace(":", ".")
 
 
